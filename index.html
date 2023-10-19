@@ -25,11 +25,26 @@
             <img src="./assets/search.svg" alt="search" />
           </li>
         </ul>
+
         <!-- mobile -->
         <ul class="header__menu-mobile">
-          <li>
-            <img src="./assets/menu.svg" alt="menu" />
-          </li>
+          <div class="menu-mobile" id="mySidenav">
+            <div style="width: 25px">
+              <img
+                src="./assets/close.webp"
+                alt="menu"
+                onclick="closeNav()"
+                style="width: 24px; position: absolute; right: 9px; top: 25px"
+              />
+            </div>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about-us">About Us</a></li>
+          </div>
+          <div>
+            <img src="./assets/menu.svg" alt="menu" onclick="openNav()" />
+          </div>
         </ul>
       </nav>
     </header>
@@ -87,7 +102,6 @@
 
           <img src="assets/arrow-up-right.svg" alt="learn more" />
         </button>
-
         <div class="about-us__image-sushi2">
           <img src="assets/sushi-2.png" alt="sushi" data-aos="fade-right" />
         </div>
@@ -105,6 +119,84 @@
         </p>
       </div>
     </section>
+    <!-- Popular food -->
+
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title">Popular Food / 人気</h2>
+      <div class="popular-foods__filters sushi__hide-scrollbar">
+        <button class="popular-foods__filter-btn active">All</button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/sushi-9.png" alt="sushi 9" />
+          Sushi
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/sushi-8.png" alt="sushi 8" />
+          Ramen
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/sushi-7.png" alt="sushi 7" />
+          Udon
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/sushi-6.png" alt="sushi 6" />
+          Danggo
+        </button>
+        <button class="popular-foods__filter-btn">Other</button>
+      </div>
+      <div class="popular-foods__catalogue">
+        <article class="popular-foods__card">
+          <img
+            src="./assets/sushi-12.png"
+            class="popular-foods__card-image"
+            alt="sushi-12"
+          />
+          <h4 class="popular-foods__card-title">Chezu Sushi</h4>
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="./assets/star.svg" alt="star" />
+              <p>4.9</p>
+            </div>
+            <p class="popular-foods__card-price">$21.00</p>
+          </div>
+        </article>
+        <article class="popular-foods__card active-card">
+          <img
+            src="./assets/sushi-12.png"
+            class="popular-foods__card-image"
+            alt="sushi-12"
+          />
+          <h4 class="popular-foods__card-title">Chezu Sushi</h4>
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="./assets/star.svg" alt="star" />
+              <p>4.9</p>
+            </div>
+            <p class="popular-foods__card-price">$21.00</p>
+          </div>
+        </article>
+        <article class="popular-foods__card">
+          <img
+            src="./assets/sushi-12.png"
+            class="popular-foods__card-image"
+            alt="sushi-12"
+          />
+          <h4 class="popular-foods__card-title">Chezu Sushi</h4>
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src="./assets/star.svg" alt="star" />
+              <p>4.9</p>
+            </div>
+            <p class="popular-foods__card-price">$21.00</p>
+          </div>
+        </article>
+      </div>
+      <button class="popular-foods__button">
+        Explore food
+
+        <img src="./assets/arrow-right.svg" alt="arrow-right" />
+      </button>
+    </section>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
